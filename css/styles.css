@@ -23,6 +23,7 @@
   --blue-color: #0000ff;
   --border-color: #eeeeee;
   --bgc-icon: rgba(255, 255, 255, 0.1);
+  --border-clients: #afb1b8;
 }
 
 /* ШАПКА ПРОФИЛЯ  */
@@ -252,6 +253,9 @@ img {
 }
 .featurs-item {
   width: 270px;
+  /* height: 120px;
+  background-color: tomato; */
+  /* margin-top: 30px; */
 }
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
 .work {
@@ -508,6 +512,7 @@ img {
 
 .clients {
   padding: 94px 0;
+  background: var(--color-section);
 }
 
 .clients-list {
@@ -597,4 +602,44 @@ img {
 }
 .another-list {
   padding: 16px 32px 0 32px;
+}
+.client-paragraph {
+  width: 170px;
+  height: 92px;
+
+  padding: 16px 32px;
+  border: 1px solid var(--border-clients);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-paragraph:hover,
+.client-paragraph:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-paragraph:hover .icon-list-item,
+.client-paragraph:focus .icon-list-item {
+  fill: var(--accent-color);
+}
+
+.icon-list-item {
+  fill: var(--border-clients);
+}
+
+.icon-list-item:hover,
+.icon-list-item:focus {
+  fill: var(--accent-color);
+}
+.icon-block {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: var(--team-section);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-section {
+  margin: 25px 100px;
 }
