@@ -116,10 +116,6 @@ img {
   display: block;
 }
 
-.nav-link:first-child {
-  padding-left: 0;
-}
-
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -169,7 +165,6 @@ img {
 .contact-link:hover .icon-inform,
 .contact-link:focus .icon-inform {
   fill: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .inform {
@@ -239,8 +234,7 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 .featurs-item-discription {
   color: var(--grey-color);
@@ -249,9 +243,6 @@ img {
 }
 .featurs-item {
   width: 270px;
-  /* height: 120px;
-  background-color: tomato; */
-  /* margin-top: 30px; */
 }
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
 .work {
@@ -308,11 +299,15 @@ img {
 .portfolio-element:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
-.portfolio-element:hover,
-.portfolio-element:focus {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .container-team {
   display: flex;
 }
@@ -375,14 +370,6 @@ img {
   background-color: var(--white-color);
 }
 
-/* .button-primary {
-  background-color: var(--accent-color);
-}
-.button-primary:focus,
-.button-primary:hover{
-  color: var(--accent-color);
-  background-color: var(--white-color);
-} */
 .footer-section {
   background-color: var(--footer-index);
   font-family: Raleway;
@@ -497,10 +484,7 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
-/* .footer-item:first-child{
-  margin-bottom: 20px;
- 
-} */
+
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -534,6 +518,7 @@ img {
 
 .icon-inform {
   margin: 0 10px 0 0;
+  fill: var(--grey-color);
 }
 
 .join {
@@ -602,7 +587,6 @@ img {
 }
 
 .another-icon-object {
-  /* fill: var(--white-color); */
   fill: #afb1b8;
 }
 
@@ -613,10 +597,9 @@ img {
   padding: 16px 32px 0 32px;
 }
 .client-paragraph {
-  width: 170px;
-  height: 92px;
+  width: 168px;
+  height: 90px;
 
-  padding: 16px 32px;
   border: 1px solid var(--border-clients);
   box-sizing: border-box;
   border-radius: 4px;
@@ -633,12 +616,18 @@ img {
 }
 
 .icon-list-item {
+  display: block;
   fill: var(--border-clients);
+  padding: 12px 36px;
+  border: none;
+  height: 90px;
+  width: 168px;
 }
 
 .icon-list-item:hover,
 .icon-list-item:focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .icon-block {
   display: flex;
