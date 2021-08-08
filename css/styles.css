@@ -504,7 +504,6 @@ img {
 
 .clients {
   padding: 94px 0;
-  background: var(--color-section);
 }
 
 .clients-list {
@@ -632,12 +631,13 @@ img {
 .icon-block {
   display: flex;
   width: 270px;
-  height: 120px;
+  justify-content: center;
   background: var(--team-section);
   border-radius: 4px;
   margin-bottom: 30px;
+  padding: 25px 0;
 }
 
-.icon-section {
+/* .icon-section {
   margin: 25px 100px;
-}
+} */
