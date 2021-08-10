@@ -77,6 +77,10 @@ img {
 
   flex-wrap: wrap;
 }
+.flex-aling {
+  display: flex;
+  align-items: center;
+}
 .section-header {
   display: flex;
   justify-content: center;
@@ -152,8 +156,6 @@ img {
 
 .contact-link {
   color: var(--grey-color);
-  align-items: center;
-  display: flex;
 
   padding-left: 0;
 }
@@ -565,7 +567,7 @@ img {
   display: flex;
   height: 44px;
   width: 44px;
-  border-radius: 50%;
+
   align-items: center;
   justify-content: center;
 }
@@ -637,7 +639,3 @@ img {
   margin-bottom: 30px;
   padding: 25px 0;
 }
-
-/* .icon-section {
-  margin: 25px 100px;
-} */
